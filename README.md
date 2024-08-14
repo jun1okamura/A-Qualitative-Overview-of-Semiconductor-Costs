@@ -13,7 +13,7 @@ While much attention is being given to the advancements in semiconductor scaling
 ## What is Scaling?
 Why do we scale semiconductors? Essentially, scaling refers to the technology used to make components smaller. This enables more functions to be packed into the same physical space. The semiconductor business is sometimes likened to real estate, where building a two-story house on the same plot instead of a single-story one would double the rental income. In this sense, scaling technology can be seen as the architectural technology that allows for the construction of taller buildings.
 
-## Understanding Moore's Law
+### Understanding Moore's Law
 >[!TIP]
 >Moore's Law is a concept introduced by Gordon Moore in 1965, who later co-founded Intel. He predicted that the number of components on an integrated circuit would double every year, with this trend expected to continue for at least another 10 years. In 1975, he adjusted this prediction, forecasting that the doubling would occur every two years over the next decade. This two-year doubling prediction has held steady since 1975, becoming widely known as ["Moore's Law."](https://ja.wikipedia.org/wiki/%E3%83%A0%E3%83%BC%E3%82%A2%E3%81%AE%E6%B3%95%E5%89%87)
 
