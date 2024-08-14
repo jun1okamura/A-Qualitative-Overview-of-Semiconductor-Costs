@@ -23,7 +23,7 @@ As a result, starting from the commercialization of a device in 1959 that integr
 
 ![Fig-1](Fig-1.png)
 
-### Why Focus on scaling?
+### Why Focus on Scaling?
 The semiconductor business is sometimes compared to the printing industry because the value brought by scaling is somewhat similar. Essentially, scaling enables the doubling of the amount of text that can be printed on a single page, allowing twice the information to be packed onto one page at almost the same cost. Although the human eye cannot read such scaled text, semiconductors read and write using electricity, making it possible to handle even electron-sized scaling. In fact, cutting-edge memory devices already store information in clusters of just a few electrons.
 
 ### Scaling and 3D Technology
