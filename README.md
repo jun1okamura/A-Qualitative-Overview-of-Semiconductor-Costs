@@ -49,7 +49,7 @@ The following graph illustrates the trend in TSMC’s wafer prices, based on pub
 
 ![Fig-4](Fig-4.png)
 
-Although the graph may not be perfectly accurate, it offers a good overview of the wafer price trends (which roughly equate to manufacturing costs). Some estimates, $`W_{price} = \sigma・x^{-0.75}`$, can be made from the slope of the graph (with thanks to Mr. Shoichi Kakami from [Unisantis](https://unisantis.com/) for the information).
+Although the graph may not be perfectly accurate, it offers a good overview of the wafer price trends (which roughly equate to manufacturing costs). Some estimates, $`W_{price} = \sigma・x^{-0.75}`$, can be made from the slope of the graph (with thanks to Mr. Shoichi Kakumu from [Unisantis](https://unisantis.com/) for the information).
 
 In essence, if you’re producing a large enough volume of wafers that design, development, and mask costs become negligible, you can achieve the benefits of scaling (doubling the value) with only a modest increase in cost (1.3 times).
 
