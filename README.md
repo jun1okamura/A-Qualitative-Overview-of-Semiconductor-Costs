@@ -14,7 +14,8 @@ While much attention is being given to the advancements in semiconductor scaling
 Why do we scale semiconductors? Essentially, scaling refers to the technology used to make components smaller. This enables more functions to be packed into the same physical space. The semiconductor business is sometimes likened to real estate, where building a two-story house on the same plot instead of a single-story one would double the rental income. In this sense, scaling technology can be seen as the architectural technology that allows for the construction of taller buildings.
 
 ## Understanding Moore's Law
-Moore's Law is a concept introduced by Gordon Moore in 1965, who later co-founded Intel. He predicted that the number of components on an integrated circuit would double every year, with this trend expected to continue for at least another 10 years. In 1975, he adjusted this prediction, forecasting that the doubling would occur every two years over the next decade. This two-year doubling prediction has held steady since 1975, becoming widely known as "Moore's Law."
+>[!TIP]
+>Moore's Law is a concept introduced by Gordon Moore in 1965, who later co-founded Intel. He predicted that the number of components on an integrated circuit would double every year, with this trend expected to continue for at least another 10 years. In 1975, he adjusted this prediction, forecasting that the doubling would occur every two years over the next decade. This two-year doubling prediction has held steady since 1975, becoming widely known as ["Moore's Law."](https://ja.wikipedia.org/wiki/%E3%83%A0%E3%83%BC%E3%82%A2%E3%81%AE%E6%B3%95%E5%89%87)
 
 What distinguishes semiconductor scaling from architectural advancements is the rapid development pace and the continual push of technological boundaries, all in line with Moore's Law. To put it in perspective, it’s like if the number of floors in a building doubled every two years for the past 65 years.
 
@@ -26,7 +27,7 @@ The semiconductor business is sometimes compared to the printing industry becaus
 ### Scaling and 3D Technology
 Semiconductor scaling has progressed through the refinement of photomask technology, analogous to the master plates in the printing industry, and through the process of exposing and developing these masks onto silicon resist. However, as scaling advances, it becomes necessary to reduce the wavelength of the light used for exposure. Currently, Extreme Ultraviolet (EUV) light with a wavelength of 13.5nm is utilized in the most advanced technologies.
 
-Interestingly, Japanese equipment manufacturers, who once led the world with exposure machines using laser light sources such as KrF (248nm) and ArF (193nm), have fallen behind due to their inability to mass-produce machines utilizing EUV light sources. This has allowed the Dutch company ASML to dominate the market. However, as no light source with a wavelength shorter than 13.5nm has been developed yet, discussions are now focusing on increasing the number of transistors per unit area using 3D technology, similar to architectural techniques. IMEC roadmap
+Interestingly, Japanese equipment manufacturers, who once led the world with exposure machines using laser light sources such as KrF (248nm) and ArF (193nm), have fallen behind due to their inability to mass-produce machines utilizing EUV light sources. This has allowed the Dutch company ASML to dominate the market. However, as no light source with a wavelength shorter than 13.5nm has been developed yet, discussions are now focusing on increasing the number of transistors per unit area using 3D technology, similar to architectural techniques. [IMEC roadmap](https://www.imec-int.com/en/articles/20-year-roadmap-tearing-down-walls)
 
 Traditionally, semiconductor scaling has been defined by the minimum feature size, representing each generation. Each generation was characterized by a reduction in feature size that allowed for doubling the number of transistors. However, with recent advanced semiconductor technologies, generations are no longer defined by feature size alone but by the introduction of new technologies that enable the integration of twice as many transistors. Instead of terms like XXnm, we now see terms such as A10 or A7 (where A stands for Angstrom). Similar to the difference between iPhone 14 and iPhone 15, these numbers have lost much of their inherent meaning.
 
@@ -40,13 +41,14 @@ In the sections that follow, we will qualitatively analyze the trends in each of
 ### Wafer Prices
 The following graph illustrates the trend in TSMC’s wafer prices, based on publicly available information and insights gathered from discussions. The horizontal axis ranges from 0.35um to 28nm, while the vertical axis represents the price per wafer in USD.
 
-Although the graph may not be perfectly accurate, it offers a good overview of the wafer price trends (which roughly equate to manufacturing costs). Some estimates can be made from the slope of the graph (with thanks to Mr. Shoichi Kakami from Unisantis Corporation for the information).
+Although the graph may not be perfectly accurate, it offers a good overview of the wafer price trends (which roughly equate to manufacturing costs). Some estimates, $`W_{price} = \sigma・x^{-0.75}`$, can be made from the slope of the graph (with thanks to Mr. Shoichi Kakami from [Unisantis](https://unisantis.com/) for the information).
 
 In essence, if you’re producing a large enough volume of wafers that design, development, and mask costs become negligible, you can achieve the benefits of scaling (doubling the value) with only a modest increase in cost (1.3 times).
 
 This suggests that the semiconductor industry has developed scaling technologies with mass production in mind. However, it’s also important to recognize that manufacturing costs increase exponentially as scaling continues.
 
-Moreover, if the current price trend persists, the wafer price for the 2nm generation is expected to exceed $20,000 (with some reports suggesting it could reach $25,000). Given a typical chip size of 10x10mm and a yield of about 500 dies per 300mm wafer, the cost per chip would be approximately $50.
+>[!TIP]
+>Moreover, if the current price trend persists, the wafer price for the 2nm generation is expected to exceed $20,000 (with some [reports](https://news.mynavi.jp/techplus/article/20230629-2715416/) suggesting it could reach $25,000). Given a typical chip size of 10x10mm and a yield of about 500 dies per 300mm wafer, the cost per chip would be approximately $50.
 
 ### Mask Costs
 Let’s now discuss the costs associated with masks. In general, as semiconductor scaling progresses, the precision required for mask fabrication increases, which in turn drives up the unit cost. Additionally, as scaling advances, there’s an increase in the variety of transistors and the number of wiring layers. Moreover, in state-of-the-art semiconductor manufacturing, double patterning (a double exposure technique) is often required, leading to a continuous rise in the full mask costs necessary for creating integrated circuits.
@@ -93,18 +95,6 @@ In the previous section, we discussed how the semiconductor business becomes pro
 ### Yield
 Another critical factor to consider in the semiconductor business is yield. Defective chips result from defects (such as foreign particles or scratches) on the finely processed wafer. Therefore, reducing the "contamination" that causes defects during the manufacturing process is crucial for quality control, necessitating the use of cleanrooms, high-purity gases, water, and specialized chemicals. Even with these measures, it is impossible to completely eliminate defects. The aim is to keep the defect density (number of defects per unit area) below a target level, which serves as a key indicator for managing the manufacturing line.
 
-### Intel's Tick-Tock Strategy
-This trend can be observed in Intel's chip size data.
-
-At that time, Intel followed a strategy known as "Tick-Tock," in which they alternated between architectural changes and process node advancements. The strategy involved updating the architecture using an older process node, and then moving to a smaller process while maintaining the same architecture. This approach meant that while adding new features on an older process node increased chip size and cost, it minimized yield risks when introducing a new architecture. Once the newer process stabilized, Intel would reduce the chip size of the new architecture, thereby lowering costs and maximizing profits. (This strategy has since been revised.)
-
-### Nvidia's Strategy
-Nvidia, in contrast, has employed a different approach to maintain its dominance in the AI-driven GPU market.
-
-As the trend clearly indicates, Nvidia consistently pushes chip sizes to the reticle limit, aiming to integrate the maximum number of transistors possible with each generation. Naturally, this leads to lower yields and higher chip costs. However, since they hold a dominant market position, they can command high prices and continue to drive performance forward. For example, the H100 is reportedly priced around USD 40K, which is significantly higher than the estimated wafer cost of USD 12K for 5nm technology. This means that even with only one viable chip per wafer, the business remains profitable.
-
-GPUs generally feature a highly parallel circuit design, allowing for the inclusion of redundant circuits that can be switched in to tolerate some level of defects. With careful design of these redundant circuits, yield can be further improved.
-
 When the defect density is D and the chip area is A, the yield follows the Poisson distribution function below.
 
 Let’s examine the relationship between chip size and yield.
@@ -118,6 +108,19 @@ The fact that semiconductor chips used in most PCs and mobile phones are general
 Let’s plot the relationship between net gross (considering yield) and chip size.
 
 This graph illustrates that when the chip size is sufficiently small, the net gross is inversely proportional to the chip size. However, as the chip size increases, the net gross gradually decreases due to the impact of yield. Therefore, if the goal is to enhance chip functionality by increasing its size, it may be more advantageous to reduce the chip size by advancing to the next generation of scaling.
+
+### Intel's Tick-Tock Strategy
+This trend can be observed in Intel's chip size data.
+
+At that time, Intel followed a strategy known as "Tick-Tock," in which they alternated between architectural changes and process node advancements. The strategy involved updating the architecture using an older process node, and then moving to a smaller process while maintaining the same architecture. This approach meant that while adding new features on an older process node increased chip size and cost, it minimized yield risks when introducing a new architecture. Once the newer process stabilized, Intel would reduce the chip size of the new architecture, thereby lowering costs and maximizing profits. (This strategy has since been revised.)
+
+### Nvidia's Strategy
+Nvidia, in contrast, has employed a different approach to maintain its dominance in the AI-driven GPU market.
+
+As the trend clearly indicates, Nvidia consistently pushes chip sizes to the reticle limit, aiming to integrate the maximum number of transistors possible with each generation. Naturally, this leads to lower yields and higher chip costs. However, since they hold a dominant market position, they can command high prices and continue to drive performance forward. For example, the H100 is reportedly priced around USD 40K, which is significantly higher than the estimated wafer cost of USD 12K for 5nm technology. This means that even with only one viable chip per wafer, the business remains profitable.
+
+>[!TIP]
+>GPUs generally feature a highly parallel circuit design, allowing for the inclusion of redundant circuits that can be switched in to tolerate some level of defects. With careful design of these redundant circuits, yield can be further improved.
 
 ## Understanding the Semiconductor Business
 In this discussion, we’ve explored the cost trends associated with semiconductor scaling. Despite 65 years of Moore’s Law holding true, and the continuous advancement of scaling technology, the associated costs are also on the rise. For a semiconductor business utilizing advanced manufacturing technology to be sustainable, it’s vital to develop markets that require high-volume production and can accommodate chips that withstand pricing pressures.
