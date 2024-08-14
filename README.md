@@ -138,23 +138,30 @@ As the chip size increases, the yield drops significantly.
 
 Assuming a wafer price of USD 3,400 and a defect density of D, the yield, number of good chips, and chip price for representative chip sizes are calculated as shown below.
 
+![Fig-15](Fig-15.png)
+
 The fact that semiconductor chips used in most PCs and mobile phones are generally no larger than 10x10mm suggests that controlling defect density within an economically reasonable range and keeping the chip size within a range that ensures an appropriate yield is crucial for maintaining stable production costs.
 
 Let’s plot the relationship between net gross (considering yield) and chip size.
 
-![Fig-15](Fig-15.png)
+![Fig-16](Fig-16.png)
 
 This graph illustrates that when the chip size is sufficiently small, the net gross is inversely proportional to the chip size. However, as the chip size increases, the net gross gradually decreases due to the impact of yield. Therefore, if the goal is to enhance chip functionality by increasing its size, it may be more advantageous to reduce the chip size by advancing to the next generation of scaling.
 
 ### Intel's Tick-Tock Strategy
-This trend can be observed in Intel's chip size data.
+This trend can be observed in [Intel's chip size data.](https://pc.watch.impress.co.jp/docs/2007/1005/kaigai03.pdf
+)
+
+![Fig-17](Fig-17.png)
 
 At that time, Intel followed a strategy known as "Tick-Tock," in which they alternated between architectural changes and process node advancements. The strategy involved updating the architecture using an older process node, and then moving to a smaller process while maintaining the same architecture. This approach meant that while adding new features on an older process node increased chip size and cost, it minimized yield risks when introducing a new architecture. Once the newer process stabilized, Intel would reduce the chip size of the new architecture, thereby lowering costs and maximizing profits. (This strategy has since been revised.)
 
 ### Nvidia's Strategy
 Nvidia, in contrast, has employed a different approach to maintain its dominance in the AI-driven GPU market.
 
-As the trend clearly indicates, Nvidia consistently pushes chip sizes to the reticle limit, aiming to integrate the maximum number of transistors possible with each generation. Naturally, this leads to lower yields and higher chip costs. However, since they hold a dominant market position, they can command high prices and continue to drive performance forward. For example, the H100 is reportedly priced around USD 40K, which is significantly higher than the estimated wafer cost of USD 12K for 5nm technology. This means that even with only one viable chip per wafer, the business remains profitable.
+![Fig-18](Fig-18.png)
+
+As the trend clearly indicates, Nvidia consistently pushes chip sizes to the reticle limit, aiming to integrate the maximum number of transistors possible with each generation. Naturally, this leads to lower yields and higher chip costs. However, since they hold a dominant market position, they can command high prices and continue to drive performance forward. For example, the H100 is reportedly priced at around USD 40K, which is significantly higher than the estimated wafer cost of USD 12K for 5nm technology. This means that even with only one viable chip per wafer, the business remains profitable.
 
 >[!TIP]
 >GPUs generally feature a highly parallel circuit design, allowing for the inclusion of redundant circuits that can be switched in to tolerate some level of defects. With careful design of these redundant circuits, yield can be further improved.
