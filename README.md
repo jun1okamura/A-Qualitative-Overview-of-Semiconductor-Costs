@@ -104,25 +104,35 @@ Let’s revisit the semiconductor cost equation.
 
 To gain a better understanding, let’s plot the wafer costs for various scaling generations, using the horizontal axis for the total lifetime production of wafers and the vertical axis for the cost.
 
+![Fig-10](Fig-10.png)
+
 The graph illustrates that around 100,000 to 1 million wafers need to be produced to amortize the initial costs (design costs + mask costs). Therefore, when production volumes are limited by these initial costs, it’s necessary to price the product in a way that includes both the optimal production costs and the initial costs to ensure profitability. This implies that semiconductors with smaller lifetime production volumes will inevitably have higher prices compared to those with larger production volumes, assuming they offer similar functionality. Essentially, only products that can sell at these higher prices will be viable from a business standpoint.
 
 This graph underscores the fact that the semiconductor industry fundamentally benefits from economies of scale through mass production.
 
 ### Wafer Gross
-Semiconductor chips are ultimately cut from a circular wafer, but because the chips are square, the larger the chip size, the more unusable area there is around the wafer's edges. The number of chips that can be cut from a single wafer is referred to as the "gross," and there are online tools available to calculate this.
+Semiconductor chips are ultimately cut from a circular wafer, but because the chips are square, the larger the chip size, the more unusable area there is around the wafer's edges. The number of chips that can be cut from a single wafer is referred to as the "gross," and there are online tools available to calculate this. [Gross caliculator](https://anysilicon.com/die-per-wafer-formula-free-calculators/)
+
+![Fig-11](Fig-11.png)
 
 The smaller the chip size, the less unusable area there is around the wafer’s edges, so the gross number of chips gets closer to the wafer area divided by the chip area. Conversely, the larger the chip size, the more unusable area there is around the wafer, and the gross number becomes less than the wafer area divided by the chip area. Additionally, the maximum chip size is limited by the specifications of the exposure machine and the mask size (200x200mm), with the usual maximum chip size being 26x33mm, also known as the "reticle limit."
 
 Below are the gross calculation results for a 300mm wafer with typical chip sizes.
 
-In the previous section, we discussed how the semiconductor business becomes profitable when the lifetime production of wafers is between 100,000 and 1 million. Assuming a chip size of 7x7mm, the gross number would exceed 1,000, meaning that the lifetime production of chips that becomes profitable would range from 1 to 10 billion chips.
+![Fig-12](Fig-12.png)
+
+In the previous section, we discussed how the semiconductor business becomes profitable when the lifetime production of wafers is between 100,000 and 1 million. Assuming a chip size of 7x7mm, the gross number would exceed 1,000, meaning that the lifetime production of chips that become profitable would range from 1 to 10 billion chips.
 
 ### Yield
 Another critical factor to consider in the semiconductor business is yield. Defective chips result from defects (such as foreign particles or scratches) on the finely processed wafer. Therefore, reducing the "contamination" that causes defects during the manufacturing process is crucial for quality control, necessitating the use of cleanrooms, high-purity gases, water, and specialized chemicals. Even with these measures, it is impossible to completely eliminate defects. The aim is to keep the defect density (number of defects per unit area) below a target level, which serves as a key indicator for managing the manufacturing line.
 
 When the defect density is D and the chip area is A, the yield follows the Poisson distribution function below.
 
+![Fig-13](Fig-13.png)
+
 Let’s examine the relationship between chip size and yield.
+
+![Fig-14](Fig-14.png)
 
 As the chip size increases, the yield drops significantly.
 
@@ -131,6 +141,8 @@ Assuming a wafer price of USD 3,400 and a defect density of D, the yield, number
 The fact that semiconductor chips used in most PCs and mobile phones are generally no larger than 10x10mm suggests that controlling defect density within an economically reasonable range and keeping the chip size within a range that ensures an appropriate yield is crucial for maintaining stable production costs.
 
 Let’s plot the relationship between net gross (considering yield) and chip size.
+
+![Fig-15](Fig-15.png)
 
 This graph illustrates that when the chip size is sufficiently small, the net gross is inversely proportional to the chip size. However, as the chip size increases, the net gross gradually decreases due to the impact of yield. Therefore, if the goal is to enhance chip functionality by increasing its size, it may be more advantageous to reduce the chip size by advancing to the next generation of scaling.
 
