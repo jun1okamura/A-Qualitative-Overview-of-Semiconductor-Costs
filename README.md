@@ -80,7 +80,7 @@ Design and development costs are incurred for each project, and similar to mask 
 
 ![Fig-6](Fig-6.png)
 
-Are design and development costs increasing with scaling, just like mask and wafer costs? According to studies by IBIS in 2018 and 2023, which examined the design costs for startups creating a chip from scratch, design costs have been shown to increase exponentially with scaling.
+Are design and development costs increasing with scaling, just like mask and wafer costs? According to studies by IBIS in [2018](https://semiengineering.com/what-will-that-chip-cost) and [2023](https://www.tomshardware.com/news/firm-estimates-a-2nm-chip-now-costs-dollar725-million-to-design), which examined the design costs for startups creating a chip from scratch, design costs have been shown to increase exponentially with scaling.
 
 ![Fig-7](Fig-7.png)
 
