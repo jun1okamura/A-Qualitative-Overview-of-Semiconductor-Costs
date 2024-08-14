@@ -1,7 +1,7 @@
 # A Qualitative Overview of Semiconductor Costs
 
 > [!NOTE]
-> This article was translated by ChatGPT4 from the original [Japanese version](https://qiita.com/drafts/46baa5a35066f18a0801), which had over 36,000 views since 2024/Aug/1st.
+> This article was translated by ChatGPT4 from the original [Japanese version](https://qiita.com/jun1okamura/items/46baa5a35066f18a0801), which had over 36,000 views since 2024/Aug/1st.
 
 ## Preface 
 In 1990, NHK highlighted Japan as an "Electronic Nation," bringing the semiconductor industry into the spotlight. Thirty years later, that focus has returned. While cutting-edge manufacturing technology is at the forefront, this article chooses to step back from technical discussions to qualitatively analyze the semiconductor business by exploring the costs incurred over the past 30 years from a broader perspective.
