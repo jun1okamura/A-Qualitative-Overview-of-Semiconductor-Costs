@@ -94,7 +94,7 @@ $$(1/\sqrt{2.0})^{-1.16} = 1.5$$
 
 It’s important to note that as scaling advances, mask costs are rapidly catching up to design costs. If this trend continues, mask costs may surpass design costs.
 
->![TIP]
+>[!TIP]
 >In the generation of advanced semiconductors (<2nm), design costs have ballooned to exceed 1 billion USD (150 billion yen), far beyond the development investment capital available to most startups. It’s becoming apparent that only cash-rich, top-tier companies can feasibly pursue device development using advanced semiconductor technology.
 
 ### Semiconductor Cost Analysis
