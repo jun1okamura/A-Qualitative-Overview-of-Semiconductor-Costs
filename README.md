@@ -21,6 +21,8 @@ What distinguishes semiconductor scaling from architectural advancements is the 
 
 As a result, starting from the commercialization of a device in 1959 that integrated just two transistors on a single silicon chip, the industry has achieved a doubling of transistors every two years. By 2024, this has culminated in the ability to place 80 billion transistors on a single silicon chip.
 
+![Fig-1](Fig-1.png)
+
 ### Why Focus on scaling?
 The semiconductor business is sometimes compared to the printing industry because the value brought by scaling is somewhat similar. Essentially, scaling enables the doubling of the amount of text that can be printed on a single page, allowing twice the information to be packed onto one page at almost the same cost. Although the human eye cannot read such scaled text, semiconductors read and write using electricity, making it possible to handle even electron-sized scaling. In fact, cutting-edge memory devices already store information in clusters of just a few electrons.
 
@@ -29,10 +31,14 @@ Semiconductor scaling has progressed through the refinement of photomask technol
 
 Interestingly, Japanese equipment manufacturers, who once led the world with exposure machines using laser light sources such as KrF (248nm) and ArF (193nm), have fallen behind due to their inability to mass-produce machines utilizing EUV light sources. This has allowed the Dutch company ASML to dominate the market. However, as no light source with a wavelength shorter than 13.5nm has been developed yet, discussions are now focusing on increasing the number of transistors per unit area using 3D technology, similar to architectural techniques. [IMEC roadmap](https://www.imec-int.com/en/articles/20-year-roadmap-tearing-down-walls)
 
+![Fig-2](Fig-2.png)
+
 Traditionally, semiconductor scaling has been defined by the minimum feature size, representing each generation. Each generation was characterized by a reduction in feature size that allowed for doubling the number of transistors. However, with recent advanced semiconductor technologies, generations are no longer defined by feature size alone but by the introduction of new technologies that enable the integration of twice as many transistors. Instead of terms like XXnm, we now see terms such as A10 or A7 (where A stands for Angstrom). Similar to the difference between iPhone 14 and iPhone 15, these numbers have lost much of their inherent meaning.
 
 ## The Cost of Scaling
 We have briefly discussed semiconductor scaling and its associated value. Now, let's examine the costs involved. While scaling does create double the value, if the cost to achieve it also doubles, there is no business advantage. Therefore, the cost of scaling must be less than double. To understand this, we will first break down the cost structure of the semiconductor industry.
+
+![Fig-3](Fig-3.png)
 
 The cost of semiconductor devices can be broadly categorized into three main areas: 1) design and development, 2) mask costs, and 3) manufacturing costs. Of these, the first two can be amortized over the production life cycle, making manufacturing the primary cost driver.
 
@@ -41,9 +47,13 @@ In the sections that follow, we will qualitatively analyze the trends in each of
 ### Wafer Prices
 The following graph illustrates the trend in TSMC’s wafer prices, based on publicly available information and insights gathered from discussions. The horizontal axis ranges from 0.35um to 28nm, while the vertical axis represents the price per wafer in USD.
 
+![Fig-4](Fig-4.png)
+
 Although the graph may not be perfectly accurate, it offers a good overview of the wafer price trends (which roughly equate to manufacturing costs). Some estimates, $`W_{price} = \sigma・x^{-0.75}`$, can be made from the slope of the graph (with thanks to Mr. Shoichi Kakami from [Unisantis](https://unisantis.com/) for the information).
 
 In essence, if you’re producing a large enough volume of wafers that design, development, and mask costs become negligible, you can achieve the benefits of scaling (doubling the value) with only a modest increase in cost (1.3 times).
+
+$$(1/\sqrt{2.0})^{-0.75} = 1.3$$
 
 This suggests that the semiconductor industry has developed scaling technologies with mass production in mind. However, it’s also important to recognize that manufacturing costs increase exponentially as scaling continues.
 
@@ -55,27 +65,42 @@ Let’s now discuss the costs associated with masks. In general, as semiconducto
 
 The following graph illustrates TSMC’s full mask prices for various generations of scaling, based on gathered information and publicly available data.
 
-While the graph may not be perfectly accurate, it offers a general view of the trend in mask prices (which roughly correspond to the manufacturing NRE costs). Some estimates can be drawn from the slope of the graph.
+![Fig-5](Fig-5.png)
+
+While the graph may not be perfectly accurate, it offers a general view of the trend in mask prices (which roughly correspond to the manufacturing NRE costs). Some estimates, $`MaskCost = \rho・x^{-1.55}`$, can be drawn from the slope of the graph.
 
 In summary, mask costs tend to increase at a higher rate than wafer prices as scaling progresses.
+
+$$(1/\sqrt{2.0})^{-1.55} = 1.7$$
 
 While wafer costs rise by 30% with each step in scaling, mask costs increase by 70%. However, as previously mentioned, if mass production is assumed, the mask costs can be amortized over the entire production volume, making them less significant. It’s important to recognize that the rise in mask costs outpaces that of wafer costs, meaning the number of wafers required to amortize these costs tends to grow as scaling advances.
 
 ### Design and Development Costs
 Design and development costs are incurred for each project, and similar to mask costs, they can be amortized over the total production volume.
 
+![Fig-6](Fig-6.png)
+
 Are design and development costs increasing with scaling, just like mask and wafer costs? According to studies by IBIS in 2018 and 2023, which examined the design costs for startups creating a chip from scratch, design costs have been shown to increase exponentially with scaling.
+
+![Fig-7](Fig-7.png)
 
 Let’s plot these design costs on the same graph as the mask costs.
 
+![Fig-8](Fig-8.png)
+
 Naturally, design costs vary significantly from project to project, but the graph shows that design costs increase by 50% as scaling progresses. It also indicates that design costs are generally more than 10 times higher than mask costs.
+
+$$(1/\sqrt{2.0})^{-1.16} = 1.5$$
 
 It’s important to note that as scaling advances, mask costs are rapidly catching up to design costs. If this trend continues, mask costs may surpass design costs.
 
-In the generation of advanced semiconductors (<2nm), design costs have ballooned to exceed 1 billion USD (150 billion yen), far beyond the development investment capital available to most startups. It’s becoming apparent that only cash-rich, top-tier companies can feasibly pursue device development using advanced semiconductor technology.
+>![TIP]
+>In the generation of advanced semiconductors (<2nm), design costs have ballooned to exceed 1 billion USD (150 billion yen), far beyond the development investment capital available to most startups. It’s becoming apparent that only cash-rich, top-tier companies can feasibly pursue device development using advanced semiconductor technology.
 
 ### Semiconductor Cost Analysis
 Let’s revisit the semiconductor cost equation.
+
+![Fig-9](Fig-9.png)
 
 To gain a better understanding, let’s plot the wafer costs for various scaling generations, using the horizontal axis for the total lifetime production of wafers and the vertical axis for the cost.
 
