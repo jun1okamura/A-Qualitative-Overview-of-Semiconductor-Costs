@@ -171,7 +171,9 @@ In this discussion, we’ve explored the cost trends associated with semiconduct
 
 Conversely, in the long-tail semiconductor business, which involves low-volume production for products with extended manufacturing lives—such as automotive, industrial equipment, manufacturing equipment, and defense-related products—chip prices are predominantly influenced by design and mask costs. Since these costs increase more significantly with scaling than manufacturing costs, it’s often more advantageous from a business perspective to opt for legacy processes rather than pursuing further scaling.
 
-In the long-tail semiconductor business, where production volumes are lower, the key challenge is identifying “what can be implemented and achieved with a limited number of transistors.” I believe that the ability to solve this challenge and leverage it into a business opportunity is exactly what Japan’s industry should focus on.
+![Fig-19](Fig-19.png)
+
+In the long-tail semiconductor business, where production volumes are lower, the key challenge is identifying **“what can be implemented and achieved with a limited number of transistors.”** I believe that the ability to solve this challenge and leverage it into a business opportunity is exactly what Japan’s industry should focus on.
 
 ## What's Next
 I am considering covering topics that offer a comprehensive view of the future semiconductor business, such as reducing initial costs in long-tail semiconductor development through the use of open-source EDA tools and IP, prototyping via mask sharing (MPW, MLM, etc.), new patterning technologies like digital exposure systems and NIL, and chiplet technology for assembling large chips beyond the reticle limit by integrating multiple chips into a single package, along with the associated technical challenges.
