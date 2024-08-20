@@ -3,6 +3,9 @@
 > [!NOTE]
 > This article was translated by ChatGPT4 from the original [Japanese version](https://qiita.com/jun1okamura/items/46baa5a35066f18a0801), which had over 36,000 views since 2024/Aug/1st.
 
+## License
+This repository is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE.txt) for the full license text.
+
 ## Preface 
 In 1990, NHK highlighted Japan as an ["Electronic Nation,"](https://www2.nhk.or.jp/archives/movies/?id=D0009010374_00000) bringing the semiconductor industry into the spotlight. Thirty years later, that focus has returned. While cutting-edge manufacturing technology is at the forefront, this article chooses to step back from technical discussions to qualitatively analyze the semiconductor business by exploring the costs incurred over the past 30 years from a broader perspective.
 While much attention is being given to the advancements in semiconductor scaling driven by Generative AI and substantial development investments, this article offers a measured analysis of the costs associated with such scaling. The aim is to make the semiconductor business more comprehensible, even for those outside the industry. Your feedback and critique would be greatly appreciated.
